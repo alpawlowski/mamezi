@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Albert Pawłowski">
+  <title>Mamezi - zadanie rekrutacyjne Albert Pawłowski</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <header>
+      <section class="hero">
+        <h1 class="hero--heading">
+          <span class="hero--heading-hot">Gorąca</span>
+          promocja
+        </h1>
+
+        <div class="hero--delivery">
+          <p class="hero--delivery-heading">
+            <span class="hero--delivery-heading-bold">
+              Właśnie 
+            </span>
+            trwa!
+          </p>
+          <div class="hero--delivery-circle">
+            <img class="hero--delivery-img" src="./assets/truck.svg" alt="">
+            <p class="hero--delivery-text">dostawa gratis!</p>
+          </div>
+        </div>
+
+        <div class="hero--discounts">
+          <p class="hero--discounts-heading">Rabaty nawet do</p>
+          <div class="hero--discounts-box">
+            <p class="hero--discounts-number">80</p>
+            <span class="hero--discounts-percent">%</span>
+          </div>
+        </div>
+
+        <div class="hero--countdown">
+          <p class="hero--countdown-heading">Do końca pozostało:</p>
+          <div class="hero--countdown-wrapper">
+            <div class="hero--countdown-box">
+              <p class="hero--countdown-number" id="days">4</p>
+              <span class="hero--countdown-text">dni</span>
+            </div>
+            <div class="hero--countdown-box">
+              <p class="hero--countdown-separator">:</p>
+              <span class="hero--countdown-text">&nbsp;</span>
+            </div>
+            <div class="hero--countdown-box">
+              <p class="hero--countdown-number" id="hours">11</p>
+              <span class="hero--countdown-text">godz.</span>
+            </div>
+            <div class="hero--countdown-box">
+              <p class="hero--countdown-separator">:</p>
+              <span class="hero--countdown-text">&nbsp;</span>
+            </div>
+            <div class="hero--countdown-box">
+              <p class="hero--countdown-number" id="minutes">16</p>
+              <span class="hero--countdown-text">min</span>
+            </div>
+            <div class="hero--countdown-box">
+              <p class="hero--countdown-separator">:</p>
+              <span class="hero--countdown-text">&nbsp;</span>
+            </div>
+            <div class="hero--countdown-box">
+              <p class="hero--countdown-number" id="seconds">12</p>
+              <span class="hero--countdown-text">sek.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="info--products-per-hour">
+          <img src="./assets/clock.svg" alt="">
+          <p class="info--products-per-hour__text">
+            Produkty na godzinie <b>10:00</b>
+          </p>
+        </div>
+        <div class="info--promotion-rules">
+          <img src="./assets/alert-circle.svg" alt="">
+          <p class="info--promotion-rules__text">
+            Akcja "Gorąca promocja" nie łączy się z innymi promocjami
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <main class="wrapper">
+      <section class="select">
+        <span class="select--text">Ilość produków na stronie: </span>
+        <select class="select--number-of-products" name="select-number-of-products" id="select-number-of-products">
+          <option class="select--option" value="2">2</option>
+          <option class="select--option" value="4" selected>4</option>
+          <option class="select--option" value="8">8</option>
+        </select>
+      </section>
+      <section class="product-wrapper">
+        <div class="products-grid" id="products-grid"></div>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
